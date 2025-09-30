@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+build/
+dist/
+
+# --- Virtual env ---
+.venv/
+env/
+venv/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Data / Models (mantén liviano el repo) ---
+data/raw/
+data/interim/
+data/processed/
+models/checkpoints/
+models/exports/
+!data/.keep
+!models/.keep
+
+# --- Logs / Tmp ---
+logs/
+tmp/
+*.log
+
+# --- Credentials ---
+.env
+*.secret
