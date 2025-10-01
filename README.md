@@ -4,6 +4,8 @@ Sistema de monitoreo para detectar actividad/idle de una wire bonder usando visi
 Arquitectura preparada para Python (src/), pruebas (tests), datos (data/), modelos (models/),
 notebooks y despliegue en Raspberry Pi.
 
+#Ejecutar
+./scripts/run.sh
 ## Requisitos del sistema
 - Raspberry Pi 4 (4GB recomendado) con Debian/Raspberry Pi OS.
 - Python 3.11+ (o el que tenga tu sistema).
