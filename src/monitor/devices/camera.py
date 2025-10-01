@@ -1,5 +1,5 @@
 # deteccion y apertura de camaras usb con opencv
-# evita constantes en mayusculas usando ids numericos
+# regresa None en cualquier fallo para que app.py lo detecte bien
 
 import cv2
 
@@ -20,7 +20,7 @@ def open_camera(index: int):
     # abre camara y configura resolucion y fps basicos
     cap = cv2.VideoCapture(index)
     if not cap.isOpened():
-        return 0
+        return None
 
     # 3 = width, 4 = height, 5 = fps
     cap.set(3, 640)
@@ -30,5 +30,6 @@ def open_camera(index: int):
     ok, _ = cap.read()
     if not ok:
         cap.release()
-        return 0
+        return None
     return cap
+
